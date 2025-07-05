@@ -1,0 +1,8 @@
+Inicializaçã:
+	distrobox enter rm-ros-noetic
+	source /opt/ros/noetic/setup.bash
+	lsb_release -a
+
+spawn turtlebot:
+	rosrun gazebo_ros spawn_model -param robot_description -urdf -model turtlebot3_waffle_pi -y 0.4
+
